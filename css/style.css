@@ -1,0 +1,333 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* container */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* header */
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(white, rgba(255, 255, 255, 0.665), rgba(255, 255, 255, 0.008));
+  z-index: 9999;
+  position: fixed;
+  overflow: hidden;
+  height: 155px;
+}
+
+#header {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  height: 100px;
+  font-size: 30px;
+}
+
+.logo h1 {
+  margin: 15px;
+  padding: 0;
+}
+
+.logo h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-menu {
+  height: 92px;
+}
+
+.social {
+  float: right;
+  margin-top: 15px;
+  padding: 1rem;
+  letter-spacing: 20px;
+  font-size: larger;
+}
+
+.social section a {
+  text-decoration: none;
+  color: black;
+}
+
+.social section a:hover {
+  color: rgb(170, 170, 170);
+  transition: all 0.2s ease-in-out;
+}
+
+/* LIST MENU */
+
+.menu {
+  width: 1000px;
+  margin: 0 auto;
+  float: center;
+  padding: 15px 0 15px;
+  border-top: 1px #ccc solid;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+}
+
+.menu ul li {
+  float: left;
+  margin-right: 50px;
+}
+
+.menu ul li a {
+  color: black;
+  text-decoration: none;
+  padding-left: 75px;
+  font-size: larger;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+  color: rgb(170, 170, 170);
+  transition: all 0.2s ease-in-out;
+}
+
+/* LIST MENU END */
+
+/* header end */
+
+/* JUMBOTRON */
+
+.jumbotron {
+  padding: 100px 0;
+}
+
+.jumbotron .container {
+  display: flex;
+  padding-top: 150px;
+  justify-content: space-around;
+}
+
+.jumbotron .container img {
+  width: 300px;
+}
+
+.jumbotron .title-jumb {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 100px;
+  align-items: center;
+}
+
+/* JUMBOTRON END */
+
+/* PROFILE */
+
+.profile {
+  padding: 100px;
+}
+
+.title-profile {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 90px;
+  text-decoration: underline;
+}
+
+.profile .container {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-around;
+}
+
+.profile .container p {
+  font-size: 2em;
+}
+
+.profile .container .pic-profile img {
+  width: 300px;
+}
+
+.profile .des-profile h4 {
+  font-weight: normal;
+  margin: 50px;
+  line-height: 1.5;
+}
+
+/* PROFILE END */
+
+/* DISCOGRAPHY */
+
+.discography {
+  padding: 100px;
+}
+
+.title-discography {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 90px;
+  text-decoration: underline;
+}
+
+.discography .container {
+  margin: 10px auto;
+  border: 2px solid black;
+}
+
+.discography .container .pic-discography img {
+  border: 4px solid black;
+  margin: 24px;
+  padding: 10px;
+  height: 150px;
+}
+
+/* DISCOGRAPHY END */
+
+/* VIDEOS */
+
+.videos {
+  padding: 100px;
+}
+
+.title-videos {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 90px;
+  text-decoration: underline;
+}
+
+.videos .container {
+  margin: 100px auto;
+  margin-top: 10px;
+  padding-left: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 2px solid black;
+}
+
+.videos .container .vids-yt iframe {
+  margin: 1px;
+  padding: 0;
+}
+
+/* VIDEOS END */
+
+/* CONTACT */
+
+.contact {
+  padding: 100px 0;
+}
+
+.title-contact {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 90px;
+  text-decoration: underline;
+}
+
+form,
+input,
+textarea,
+button {
+  text-align: center;
+}
+
+.form-list label {
+  display: block;
+  margin: 30px 0px 0.5px;
+  padding-bottom: 0.6em;
+}
+
+.form-list input[type="text"],
+.form-list input[type="email"],
+.form-list textarea {
+  text-align: left;
+  width: 50%;
+  padding: 2px 5px;
+  outline: 0;
+}
+
+.form-list input[type="text"],
+.form-list input[type="email"] {
+  height: 2em;
+}
+
+.form-list textarea {
+  resize: vertical;
+}
+
+.submit {
+  color: rgb(0, 0, 0);
+  background: rgb(187, 187, 187);
+  font-weight: bold;
+  margin-top: 1em;
+  padding: 0.3em;
+  border: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: rgb(233, 233, 233);
+  transition: all 0.5s ease-in-out;
+}
+
+.form-list input[type="text"]:focus,
+.form-list input[type="email"]:focus,
+.form-list textarea:focus {
+  border: 3px solid rgb(0, 0, 0);
+  transition: all 0.1s ease-in-out;
+}
+
+/* CONTACT END */
+
+/* FOOTER */
+
+.footer {
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.footer p {
+  font-size: 1em;
+}
+
+/* FOOTER END */
+
+/* BREAKPOINT */
+
+@media screen and (max-width: 1300px) {
+  .profile .container h4 {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .profile .container img {
+    display: none;
+  }
+
+  .discography .container .pic-discography {
+    padding-left: 80px;
+  }
+
+  .videos .container .vids-yt {
+    padding-left: 80px;
+  }
+}
+
+/* BREAKPOINT END */
